@@ -12,7 +12,7 @@ for a in range(1, n + 1) :
 # 간선 정보 입력
 for _ in range(m) :
     # a 에서 b로 가는 비용 1
-    a, b, c = map(int, input().split())
+    a, b = map(int, input().split())
     graph[a][b] = 1
     graph[b][a] = 1
 
