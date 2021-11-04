@@ -1,5 +1,6 @@
 def solution(n):
     answer = ''
+    
     while n > 0:
         if n % 3 == 0:
             answer = '4' + answer
