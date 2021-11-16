@@ -9,6 +9,6 @@ def solution(a, b):
 
 import datetime
 
-def solution(a, b): 
-    day = ['MON','TUE','WED','THU','FRI','SAT','SUN']
-    return day[datetime.datetime(year=2016, month=a, day=b).weekday()]
+# def solution(a, b): 
+#     day = ['MON','TUE','WED','THU','FRI','SAT','SUN']
+#     return day[datetime.datetime(year=2016, month=a, day=b).weekday()]
