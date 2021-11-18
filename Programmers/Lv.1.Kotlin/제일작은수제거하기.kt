@@ -3,7 +3,6 @@ class Solution {
         if (arr.size == 1) {
             intArrayOf(-1)
         } else arr.filter {
-            print(it)
             it != arr.min()
         }.toIntArray()
     
