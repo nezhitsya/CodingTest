@@ -7,7 +7,7 @@ def solution(a, b):
     
     return answer
 
-import datetime
+# import datetime
 
 # def solution(a, b): 
 #     day = ['MON','TUE','WED','THU','FRI','SAT','SUN']
