@@ -4,5 +4,6 @@ def solution(X, Y, D):
         return (Y - X) // D
     else:
         return (Y - X) // D + 1
+    # return (Y - X) // D if (Y - X) % D == 0 else (Y - X) // D + 1
 
 print(solution(10, 85, 30)) # 3
