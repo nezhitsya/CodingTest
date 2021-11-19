@@ -38,22 +38,22 @@ class Solution {
     }
 }
 
-class Solution {
-    fun solution(scores: Array<IntArray>): String {
-    return scores.mapIndexed { index, ints ->
-        var flag = 0
-        var list = arrayListOf<Int>().also { (scores.indices).map { v -> it.add(scores[v][index]) } }
-        list.forEach { if (it == ints[index]) flag++ }
-        if ((list.max() == ints[index] || list.min() == ints[index]) && flag == 1)
-            list.remove(ints[index])
-        list.sum() / list.size.toDouble()
-    }.joinToString("") {
-        when {
-            it >= 90 -> "A"
-            it >= 80 -> "B"
-            it >= 70 -> "C"
-            it >= 50 -> "D"
-            else -> "F"
-        }
-    }
-}
+// class Solution {
+//     fun solution(scores: Array<IntArray>): String {
+//     return scores.mapIndexed { index, ints ->
+//         var flag = 0
+//         var list = arrayListOf<Int>().also { (scores.indices).map { v -> it.add(scores[v][index]) } }
+//         list.forEach { if (it == ints[index]) flag++ }
+//         if ((list.max() == ints[index] || list.min() == ints[index]) && flag == 1)
+//             list.remove(ints[index])
+//         list.sum() / list.size.toDouble()
+//     }.joinToString("") {
+//         when {
+//             it >= 90 -> "A"
+//             it >= 80 -> "B"
+//             it >= 70 -> "C"
+//             it >= 50 -> "D"
+//             else -> "F"
+//         }
+//     }
+// }
