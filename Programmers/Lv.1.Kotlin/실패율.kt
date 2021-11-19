@@ -18,6 +18,8 @@ class Solution {
         val comparator = compareBy<Pair<Int,Float>> { -it.second }
         val secondcomp = comparator.thenBy { it.first }
         faillist.sortWith(secondcomp)
+
+        // faillist.sortWith(compareBy<Pair<Int, Float>> { -it.second }.thenBy {it.first })
         
         for(i in faillist.indices) {
             answer.add(faillist[i].first)
