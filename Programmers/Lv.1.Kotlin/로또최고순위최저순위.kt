@@ -35,4 +35,11 @@ class Solution {
             return 6
         }
     }
+
+    // fun solution(lottos: IntArray, winNums: IntArray): IntArray {
+    //     return intArrayOf(
+    //             (lottos.size.plus(1)) - lottos.filter { winNums.contains(it) || it == 0 }.size,
+    //             (lottos.size.plus(1)) - lottos.filter(winNums::contains).size
+    //     ).map { if (it > 6) it - 1 else it }.toIntArray()
+    // }
 }
